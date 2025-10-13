@@ -57,7 +57,7 @@ nav a:hover {
 
 }
 
-/* .hero-image { (original way of making the dog appear)
+ .hero-image {
   width: 100%;
 }
 
@@ -78,9 +78,9 @@ nav a:hover {
   top: 15%;
   right: 2%;
   z-index: 1;
-} */
+} 
 
-.hero-image {
+/*.hero-image {
   display: grid;
 }
 
@@ -99,7 +99,7 @@ nav a:hover {
   padding: 1.5rem;
   border-radius: 10px;
   margin: 2rem;
-}
+} */
 
 
 .hero-image h2 {
@@ -405,7 +405,7 @@ nav a.active {
   width: auto;
 }
 
-.content {
+/*.content {
   display: flex;
   flex-direction: column;
-}
+}*/
