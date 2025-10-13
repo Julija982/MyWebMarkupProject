@@ -1,4 +1,4 @@
-/* add all items from grading group 3 and 4. Search for items in group 5 that refer to css f.e. z index */ 
+/* add all items from grading group 3 and 4. Search for items in group 5 that refer to css f.e. z index */
 
 * {
   margin: 0;
@@ -52,32 +52,55 @@ nav a:hover {
 }
 
 .hero {
-  position: relative;
+  width: 100%;
+  height: fit-content;
+
 }
 
-.hero-image {
-  display: block;
-  position: relative;
+/* .hero-image {
   width: 100%;
-  height: 450px;
-  overflow: hidden;
 }
 
 .hero-image img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
+  object-position: center;
+  display: block;
+  z-index: 0;
 }
 
 .hero-image figcaption {
-  position: absolute;
-  top: 30%;
-  right: 5%;
   max-width: 500px;
   background: rgba(255, 255, 255, 0.75);
   padding: 1.5rem;
   border-radius: 10px;
+  position: absolute;
+  top: 15%;
+  right: 2%;
+  z-index: 1;
+} */
+
+.hero-image {
+  display: grid;
 }
+
+.hero-image img {
+  grid-area: 1 / 1;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-image figcaption {
+  grid-area: 1 / 1;
+  align-self: start;
+  justify-self: end;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 2rem;
+}
+
 
 .hero-image h2 {
   font-size: 1.8rem;
@@ -146,33 +169,25 @@ footer {
   font-size: 0.9rem;
 }
 
-  .hero-image {
-    height: 300px;
-  }
 
-  .hero-image figcaption {
-    position: static;
-    background: #fff;
-    margin: 1rem;
-    border-radius: 6px;
-  }
 
-  .hero-image h2 {
-    font-size: 1.2rem;
-  }
 
-  .restaurants {
-    grid-template-columns: 1fr;
-    padding: 1.5rem;
-  }
+.hero-image h2 {
+  font-size: 1.2rem;
+}
 
-  article img {
-    height: 200px;
-  }
+.restaurants {
+  grid-template-columns: 1fr;
+  padding: 1.5rem;
+}
 
-  footer {
-    font-size: 0.8rem;
-  }
+article img {
+  height: 200px;
+}
+
+footer {
+  font-size: 0.8rem;
+}
 
 
 .detail-page {
@@ -392,4 +407,9 @@ nav a.active {
 .logo img {
   height: 50px;
   width: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
 }
