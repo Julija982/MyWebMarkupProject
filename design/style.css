@@ -26,6 +26,8 @@ header {
 header h1 {
   font-size: 1.2rem;
   flex: 1 1 auto;
+  text-indent: 5px;
+  word-spacing: 3px;
 }
 
 nav ul {
@@ -59,6 +61,7 @@ nav a:hover {
 
  .hero-image {
   width: 100%;
+  flex-shrink: 0;
 }
 
 .hero-image img {
@@ -82,7 +85,6 @@ nav a:hover {
 } 
 
 .hero-image h2 {
-  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
@@ -96,7 +98,8 @@ nav a:hover {
 
 article {
   background: #fafafa;
-  border: 1px solid #ddd;
+  border: 1px;
+  border-color: solid #ddd;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
@@ -125,20 +128,20 @@ p {
   color: #666;
   font-size: 0.9rem;
 }
-
-button {
-  margin-top: 0.8rem;
+.details-btn {
+  display: inline-block;
   background-color: #7b5f2d;
-  color: #fff;
-  border: none;
+  color: white;
+  text-decoration: none;
   padding: 0.5rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s;
+  font-family: "Open Sans", sans-serif;
 }
 
-button:hover {
-  background-color: #a37c41;
+.details-btn:hover {
+  background-color: #5a441f;
 }
 
 footer {
@@ -147,9 +150,6 @@ footer {
   background-color: #e9d8b7;
   font-size: 0.9rem;
 }
-
-
-
 
 .hero-image h2 {
   font-size: 1.2rem;
@@ -289,7 +289,9 @@ nav a.active {
 .contact-form textarea {
   width: 100%;
   padding: 0.7rem;
-  border: 1px solid #ccc;
+  border: 1px #ccc;
+  border-style: solid;
+  border-width: thin;
   border-radius: 5px;
   margin-top: 0.3rem;
   font-size: 0.95rem;
@@ -381,4 +383,32 @@ nav a.active {
 .logo img {
   height: 50px;
   width: auto;
+}
+
+/*Cookie pop up*/
+.cookie-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f5deb3;
+  color: #000;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.cookie-message button {
+  background-color: #7b5f2d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cookie-message button:hover {
+  background-color: #5a441f;
 }
