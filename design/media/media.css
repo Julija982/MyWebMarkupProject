@@ -22,7 +22,7 @@
     font-size: 0.95rem;
   }
 }
-
+/* Adjustments to the hero-image*/
 @media (max-width: 900px) {
   .hero-image {
     height: 350px;
@@ -90,4 +90,3 @@
   .logo img {
     height: 40px;
   }
-}
