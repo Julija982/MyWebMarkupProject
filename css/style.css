@@ -63,7 +63,7 @@ nav a:hover {
 
 }
 
- .hero-image {
+.hero-image {
   width: 100%;
   flex-shrink: 0;
 }
@@ -86,7 +86,7 @@ nav a:hover {
   top: 15%;
   right: 2%;
   z-index: 1;
-} 
+}
 
 .hero-image h2 {
   margin-bottom: 1rem;
@@ -95,7 +95,7 @@ nav a:hover {
 .restaurants {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(1px, 900px));
-  gap:10px;
+  gap: 10px;
   padding: 15px;
   background-color: #fff;
 }
@@ -132,6 +132,7 @@ p {
   color: #666;
   font-size: 0.9rem;
 }
+
 .details-btn {
   display: inline-block;
   background-color: #7b5f2d;
@@ -160,7 +161,7 @@ footer {
 }
 
 .restaurants {
-  grid-template-columns;
+  grid-template-columns: grid;
   padding: 5px;
 }
 
