@@ -107,7 +107,7 @@ nav a:hover {
 article {
 	background: #fafafa;
 	border: 1px;
-	border-color: solid #ddd;
+	border-color: #ddd;
 	border-radius: 10px;
 	overflow: hidden;
 	text-align: center;
@@ -165,7 +165,7 @@ footer {
 }
 
 .restaurants {
-	grid-template-columns: grid;
+	grid-template-columns: auto;
 	padding: 5px;
 }
 
